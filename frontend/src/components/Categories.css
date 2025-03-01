@@ -1,0 +1,37 @@
+.categories-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5faf7; /* Light background */
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.category-item {
+    text-align: center;
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+.category-img {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;  /* Ensures no overflow outside the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.category-img img {
+    width: 100%;  /* Ensures the image fills the container */
+    height: 100%;
+    object-fit: cover; /* Ensures the image fully covers the circle */
+}

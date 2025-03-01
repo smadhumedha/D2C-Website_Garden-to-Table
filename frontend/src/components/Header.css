@@ -1,0 +1,119 @@
+.header {
+  height: 350px; /* Fixed height */
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Keeps title centered */
+  position: relative; /* Needed for absolute positioning of auth-container */
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  color: #054018;
+  font-family: 'Delicious Handrawn', cursive;
+  background-color: white; /* Add a white background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow for better visibility */
+}
+
+/* Auth container positioning (now includes cart button) */
+.auth-container {
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Adjust spacing */
+}
+
+/* General button styling */
+.signup-button,
+.login-button,
+.home-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 120px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Specific button styles */
+.signup-button {
+  background-color: #000501; /* Green */
+  color: white;
+}
+
+.login-button {
+  background-color: #010912; /* Blue */
+  color: white;
+}
+
+.home-button {
+  background-color: #6c757d; /* Grey */
+  color: white;
+}
+
+/* Cart button styling */
+.cart-button {
+  background-color: #040404;
+  color: white;
+  width: 40px; /* Smaller size */
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+
+/* Cart badge for item count */
+.cart-button::after {
+  content: attr(data-count);
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  visibility: hidden;
+}
+
+/* Show cart count only when items are added */
+.cart-button[data-count]:not([data-count="0"])::after {
+  visibility: visible;
+}
+
+/* Button hover effects */
+.signup-button:hover {
+  background-color: #218838;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.home-button:hover {
+  background-color: #5a6268;
+}
+
+.cart-button:hover {
+  background-color: #050505;
+}

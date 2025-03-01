@@ -1,0 +1,36 @@
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust spacing between links */
+    margin-bottom: 15px; /* Adds space below links */
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px; /* Adds spacing inside each link */
+}
+
+.contact-info, .delivery-areas, .disclaimer {
+    margin-top: 20px;
+}
+
+.contact-info a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.delivery-areas h4, .disclaimer h4 {
+    margin-bottom: 5px;
+    font-size:1.2rem;
+}

@@ -1,0 +1,34 @@
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border-radius: 15px; /* Round edges */
+  padding: 4px 10px;
+  width: 90px; /* Small, no full width */
+  height: 30px; /* Compact height */
+}
+
+.quantity-selector button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px; /* Readable but small */
+  padding: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.quantity-selector .quantity {
+  font-size: 14px;
+  font-weight: bold;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* Disabled button styles */
+.quantity-selector button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
