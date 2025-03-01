@@ -40,5 +40,5 @@
 <ul>
   <li>MongoDB (Atlas or Local)</li>
 </ul>
-
+<p>🔄 <b>Note:</b> Make sure you are on the <b>master branch</b> to see both frontend and backend.</p>
 <a href="docs/Snapshots%20of%20Garden%20to%20Table.pdf"> 📄 Click here to view screenshots (PDF)</a>
